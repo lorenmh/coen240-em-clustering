@@ -1,3 +1,11 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lauren Howard - W1287305
+% COEN 240 - Coding Assignment 6
+% em.m
+
+% This script performs EM clustering on simple_iris_dataset.dat
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 clear all; close all;
 
 % X is the dataset size 100x2
@@ -15,13 +23,6 @@ cov2 = cov(X);
 
 prior1 = 0.5;
 prior2 = 0.5;
-
-% Misc. initialization
-idx_c1 = zeros(50,1);
-idx_c2 = zeros(50,1);
-
-W1 = zeros(100,1);
-W2 = zeros(100,1);
 
 M1 = repmat(u1, N, 1);
 M2 = repmat(u2, N, 1);
